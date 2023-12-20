@@ -7,7 +7,9 @@
 </head>
 <body>
         <div id="app">
-
+            <ul v-for="email, index in mail" v-if="mail.length == 10">
+                <li>{{email}}</li>
+            </ul>
         </div>
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
